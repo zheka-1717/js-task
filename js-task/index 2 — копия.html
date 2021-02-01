@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function myResult(str) {
+    for (var i = 0, j = str.length-1; i < str.length; i++, j--) {
+        return (str[i] == str[j])? true : false;
+    }
+}
+ 
+ 
+function myResult(str) {
+    return str == str.split('').reverse().join('');
+}
+ 
+ 
+ 
+var str = prompt('Введите строку:');
+ 
+alert(myResult(str));
+ 
+ 
+var str = prompt('Введите строку:');
+ 
+console.log(myResult(str));
+</script>
+</body>
+</html>
